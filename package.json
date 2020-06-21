@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "tsnd --respawn --no-notify --transpileOnly --ignore-watch node_modules src/index.ts"
+    "dev": "tsnd -r tsconfig-paths/register --respawn --no-notify --transpileOnly --ignore-watch node_modules src/index.ts"
   },
   "dependencies": {
     "express": "^4.17.1"
@@ -13,6 +13,7 @@
     "@types/express": "^4.17.6",
     "@types/node": "^14.0.13",
     "ts-node-dev": "^1.0.0-pre.49",
+    "tsconfig-paths": "^3.9.0",
     "typescript": "^3.9.5"
   }
 }
